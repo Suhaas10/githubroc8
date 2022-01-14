@@ -6,7 +6,7 @@ export const ThemeContext = React.createContext();
 
 function App() {
   console.log("App rendered");
-  const [theme, setTheme] = useState("blue");
+  const [theme, setTheme] = useState("green");
 
   return (
     <ThemeContext.Provider value={{ backgroundColor: theme }}>
@@ -17,7 +17,7 @@ function App() {
       <CounterAppHooks initialCount={0} />
       <button
         onClick={() =>
-          setTheme((prevState) => (prevState === "blue" ? "red" : "blue"))
+          setTheme((prevState) => (prevState === "green" ? "red" : "green"))
         }
       >
         change theme
