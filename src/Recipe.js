@@ -1,9 +1,7 @@
 import React from "react";
-import UngredientList from "./UngredientList";
-import AnimatedButton from "./AnimatedButton.style";
 
 const Recipe = (props) => {
-  const { id, name, cookTime, servings, instructions, ingredients } = props;
+  const { id, name, cookTime, servings, instructions } = props;
   console.log(props.id);
   return (
     <div>
@@ -23,10 +21,6 @@ const Recipe = (props) => {
       <div>
         <span>Instructions : </span>
         <div>{instructions}</div>
-      </div>
-      <div>
-        <span>Ingredients : </span>
-        <UngredientList key={id} ingredients={ingredients} />
       </div>
       <div>test</div>
     </div>
