@@ -1,7 +1,7 @@
 import React from "react";
 
 const Recipe = (props) => {
-  const { id, name, cookTime, servings, instructions } = props;
+  const { name, cookTime, servings, instructions } = props;
   console.log(props.id);
   return (
     <div>
