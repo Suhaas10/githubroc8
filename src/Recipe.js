@@ -18,15 +18,15 @@ const Recipe = (props) => {
       </div>
       <div>
         <span>Servings : </span>
-        <span>{props.servings}</span>
+        <span>{servings}</span>
       </div>
       <div>
         <span>Instructions : </span>
-        <div>{props.instructions}</div>
+        <div>{instructions}</div>
       </div>
       <div>
         <span>Ingredients : </span>
-        <UngredientList ingredients={ingredients} />
+        <UngredientList key={id} ingredients={ingredients} />
       </div>
       <div>test</div>
     </div>
